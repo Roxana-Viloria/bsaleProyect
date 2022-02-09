@@ -1,0 +1,72 @@
+.search {
+    width: 100%;
+}
+
+.formulario{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(99, 197, 103);   
+ }
+ 
+ .formulario:hover{
+     cursor:pointer;
+ }
+ 
+ .input{
+    margin: auto;
+    border-radius: 30px 0px 0px 30px;
+    border: none;
+    font-size:15px;
+    font-weight: lighter;
+    padding: 15px;
+    width: 300px;
+    height: 40px;
+    font-size: large;
+    color:grey;
+    background-color: white;
+}
+
+.input:hover{
+    cursor:pointer;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.eraser{
+    border: none;
+    color:rgb(70, 39, 206);
+    align-content: flex-end;
+    height: 10px;
+    width: 10px;
+    padding-right: 30px;
+    margin: 0;
+    font-size: large;
+    background-color: white;
+}
+
+.eraser:hover{
+    cursor:pointer;
+}
+
+.btn-glasses{
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+    background-color:rgb(214, 206, 84);
+    padding: -5px 17px 18px;
+    width: 100px;
+}
+
+.btn-glasses:hover{
+    cursor:pointer;
+}
+
+.glass {
+    width: 20px;
+    height: 15px;
+    margin: auto;
+    margin-top: 5px;
+    background-color:rgb(214, 206, 84);
+}

@@ -1,0 +1,22 @@
+.bodyContainer{
+    background-color: rgb(84, 131, 99);
+    height: 500px;
+}
+
+.productsContainer{
+    display: flex;
+    flex-wrap:wrap;
+    flex: 1;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.productsCards{
+  width: 250px;
+  height: 200px;
+  padding: 20px 20px;
+}

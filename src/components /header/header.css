@@ -1,0 +1,25 @@
+
+.headerContainer{ 
+   display: flex;
+   background-color: rgb(99, 197, 103);
+   height: 100px;
+   
+}
+
+
+.logo{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 15px;
+    background-color: rgb(99, 197, 103);
+}
+
+.marketName{
+    margin-top: 30px;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-right: 700px;
+    background-color: rgb(99, 197, 103);
+}
+
