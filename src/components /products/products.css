@@ -1,0 +1,30 @@
+.productsCards{
+  width: 250px;
+  height: 200px;
+  padding: 20px 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.img{
+  width: 150px;
+  height: 150px;
+}
+
+.title{
+  font-size: 12px;
+  margin-top: 20px;
+  
+}
+
+.shopping{
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.minilogo{
+  width: 20px;
+  height: 20px;
+  margin-left: 40px;
+}

@@ -3,13 +3,15 @@ import './search.css'
 import React, { useState } from 'react'
 import glass from '../../pictures/icon-search.svg'
 
-
+import { AppContext } from '../AppContextProvider'
 
 export default function Search (){
    
    
-    const [search, setSearch]= useState (null);
-    const [press, setPress]=useState (false)
+  const { isPress, search }= React.useContext(AppContext)
+
+    const [searchValue, setSearch]= search
+    const [press, setPress]=isPress
    
 
     const onSearchChange = (e)=>{
@@ -33,19 +35,11 @@ export default function Search (){
                   <input 
                       className="input"
                       type="text"
-                      placeholder="Buscar Gif"
+                      placeholder="Buscar"
                       onChange={onSearchChange}
-                    //   value={searchValue === null ? "" : searchValue}
+                      value={searchValue}
                       >
                   </input>
-                      {/* {searchValue !== null && searchValue.length > 0 ? 
-                      <button
-                      className="eraser"
-                      onClick={onEraser}
-                      type="button"
-                      >X  
-                      </button> : ("")
-                      } */}
                 </div>
                 <button
                 type="button"
