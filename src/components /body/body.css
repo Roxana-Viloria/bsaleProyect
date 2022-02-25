@@ -7,11 +7,14 @@
     display: flex;
     flex-wrap:wrap;
     flex: 1;
-    width: 95%;
     height: 100%;
     margin: auto;
     justify-content: center;
-    margin-bottom: 30px;
     background-color: white;
 }
 
+.welcome{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: larger;
+}

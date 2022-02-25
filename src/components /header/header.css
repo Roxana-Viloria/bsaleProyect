@@ -23,3 +23,14 @@
     background-color: rgb(99, 197, 103);
 }
 
+.button{
+    border: none;
+}
+
+.button:hover{
+    cursor:pointer;
+}
+
+.button:active{
+    transform: scaleY(1.1) scaleX(1.1);
+  }

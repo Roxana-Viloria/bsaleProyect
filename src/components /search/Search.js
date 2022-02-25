@@ -5,6 +5,8 @@ import glass from '../../pictures/icon-search.svg'
 
 import { AppContext } from '../AppContextProvider'
 
+
+
 export default function Search (){
    
    
@@ -23,13 +25,14 @@ export default function Search (){
       }
 
 
-    const onEraser =(e)=>{
-        setSearch ("")
-      }
-
+    const enter =(e)=>{
+       if (e.key === 'Enter'){
+          setPress(true);
+        }
+      }  
     return (
         <div>
-            <form> 
+            <div> 
               <div className="formulario">
                 <div className="border">
                   <input 
@@ -38,6 +41,7 @@ export default function Search (){
                       placeholder="Buscar"
                       onChange={onSearchChange}
                       value={searchValue}
+                      onKeyDown={enter}
                       >
                   </input>
                 </div>
@@ -49,7 +53,7 @@ export default function Search (){
                 <img src={glass} className="glass"></img>  
                 </button>
               </div>
-            </form>
+            </div>
         </div>
 
     );
