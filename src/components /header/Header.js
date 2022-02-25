@@ -1,11 +1,23 @@
+/** Style */
 import './header.css';
+/** Pictures */
 import logo from '../../pictures/logo.svg';
+
+/**Componentes importados, para posteriormente llamarlos en html */
 import Search from '../search/Search';
-import React, { useState } from 'react'
+
+import React, { useState } from 'react';
 import { AppContext } from '../AppContextProvider'
 
 
-export default function MarketHeader (){
+/**
+ * @author: Roxana Viloria
+ * @email : roxanaviloria02@gmail.com
+ * @returns : productos de las categorías solicitados en input de búsqueda (componente Search).
+ */
+
+
+export default function Header (){
 
     const { elements, search }= React.useContext(AppContext) 
 
@@ -13,6 +25,7 @@ export default function MarketHeader (){
     const [productsValue, setProducts]= elements
     const [searchValue, setSearch]= search
 
+/** Evento creado para volver la pantalla a su estado inicial */
     const onEraser =(e)=>{
         setProducts([])
         setSearch(null)

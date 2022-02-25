@@ -1,11 +1,18 @@
+/** style */
 import './search.css'
 
-import React, { useState } from 'react'
+/** Pictures */
 import glass from '../../pictures/icon-search.svg'
 
+import React, { useState } from 'react'
 import { AppContext } from '../AppContextProvider'
 
 
+/**
+ * 
+ * @returns {object} Cambios en el input de busqueda (search) para encontrar un producto y el evento onclick 
+ *                   del boton de busqueda.
+ */
 
 export default function Search (){
    
@@ -15,11 +22,12 @@ export default function Search (){
     const [searchValue, setSearch]= search
     const [press, setPress]=isPress
    
-
+  
     const onSearchChange = (e)=>{
         setSearch (e.target.value)
       } 
     
+   
     const onClickSearch =()=>{
         setPress (true)
       }

@@ -1,12 +1,19 @@
+/**Style */
 import './body.css'
-import Products from '../products/Products';
 
 import React, { useEffect, useState, useContext } from 'react'
-
 import { AppContext } from '../AppContextProvider'
+
+/**Componentes importados, para posteriormente llamarlos en html */
+import Products from '../products/Products';
 import NotFound from '../notfound/NotFound';
 
 
+/**
+ * @author: Roxana Viloria
+ * @email : roxanaviloria02@gmail.com
+ * @returns: productos de cada categoria, segun corresponda ( boton clickeado)
+ */
 
 
 export default function Body(){
@@ -19,10 +26,13 @@ export default function Body(){
     const [press, setPress]=isPress
    
     
-    // Se agregó un .then con un condificonal, de que el jso sea retornado si el repsonse está ok, 
-    // y posteriormente se aregró un catch para los errores que presentaban, al intentar acceder a la base de datos, 
-    // siendo que señala que se excedió la cantidad de conexiones a la base de datos.
-    // (misma implementación en el componente Menu)
+/** En useEffect: en la condición una vez solicitada la información (fetch) se agregó un ".then" con otro condiciconal, 
+ *      para que el json sea retornado, si hay una respuesta correcta o positiva, 
+        de no ser asi y arrojar un error al intentar acceder a la base de datos,se agregó ".catch" (linea 46) para que
+        el usuario observe un retorno a la pantalla de inicio.
+        En este caso, ocurrió en un par de oportunidades que al hacer la solicitud, 
+        arrojaba error por sobrepasar capacidad de conexión en la base de datos.
+ */ 
 
     useEffect (()=>{
         if (categoryValue!== 0 && !press){
@@ -42,6 +52,14 @@ export default function Body(){
             
         })
         } 
+
+/** En useEffect: en la condición una vez solicitada la información (fetch) se agregó un ".then" con otro condiciconal, 
+ *      para que el json sea retornado, si hay una respuesta correcta o positiva, 
+        de no ser asi y arrojar un error al intentar acceder a la base de datos,se agregó ".catch" (linea 46) para que
+        el usuario observe un retorno a la pantalla de inicio.
+        En este caso, ocurrió en un par de oportunidades que al hacer la solicitud, 
+        arrojaba error por sobrepasar capacidad de conexión en la base de datos.
+ */ 
         if(searchValue !== "" && press){
             fetch (`https://bsale-api-roxana.herokuapp.com/api/product?name=${searchValue}`)
             .then ((response) => {
@@ -67,11 +85,7 @@ export default function Body(){
 
     return (
         <div className="bodyContainer">
-            <div className="productsContainer welcome">{products.length > 0 ? "Resultados de la búsqueda" : 
-                <span>
-                    Bienvenidos a Shopping Market<br/> Realiza tu Búsqueda
-                </span>}
-            </div>
+            <div className="productsContainer welcome">{products.length > 0 ? "Resultados de la búsqueda" : "Realiza tu Búsqueda" }</div>
              <div className="productsContainer">
                  {products.length === 0 && searchValue ==="" ?
                     <NotFound/>

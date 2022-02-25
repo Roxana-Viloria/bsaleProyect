@@ -1,5 +1,16 @@
+/** Style */
 import './products.css';
+
+/** Pictures */
 import logo from '../../pictures/logo.svg'
+
+/**
+ * @author: Roxana Viloria
+ * @email : roxanaviloria02@gmail.com
+ * @param {object} param0 
+ * @returns {object}:cada producto anidado en cada categoria, una vez que es llamado, ya sea a travez del boton 
+ *          de la categoria a la que correpsonde o a través del input search.
+ */
 
 export default function Products({ product }){
 

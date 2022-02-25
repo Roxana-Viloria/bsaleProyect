@@ -1,8 +1,15 @@
+/** Style */
 import './notFound.css' 
+
 import React from 'react'
 
-
-function NotFound() {
+/**
+ * @author: Roxana Viloria
+ * @email : roxanaviloria02@gmail.com
+ * @returns : de no encontrarse el producto solicitado/buscado en el input search, aparecerá un letrero indicando 
+ *            que no se ha encontrado reultado para la busqueda hecha
+ */
+ export default function NotFound() {
   
     return (
     <div className="reject">
@@ -14,4 +21,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+ 

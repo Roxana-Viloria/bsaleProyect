@@ -2,6 +2,12 @@ import React, {useState} from "react";
 
 export const AppContext = React.createContext();
 
+
+/**
+ * 
+ * @param {*object} 
+ * @returns 
+ */
 export default function AppProvider ({children}){
 
     const [category, setCategory]= useState(0)
