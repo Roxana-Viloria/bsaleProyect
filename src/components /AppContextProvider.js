@@ -5,7 +5,7 @@ export const AppContext = React.createContext();
 
 /**
  * 
- * @param {*object} 
+ * @param {object} 
  * @returns 
  */
 export default function AppProvider ({children}){
