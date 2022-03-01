@@ -4,9 +4,10 @@ export const AppContext = React.createContext();
 
 
 /**
- * 
- * @param {object} 
- * @returns 
+ * App Context provider con todos los estados que necesita la app
+ * @param {Object} props
+ * @param {JSX.Element} props.children 
+ * @returns {JSX.Element} AppContext Provider
  */
 export default function AppProvider ({children}){
 

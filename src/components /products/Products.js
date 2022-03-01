@@ -1,15 +1,13 @@
-/** Style */
 import './products.css';
-
-/** Pictures */
 import logo from '../../pictures/logo.svg'
 
 /**
- * @author: Roxana Viloria
- * @email : roxanaviloria02@gmail.com
- * @param {object} param0 
- * @returns {object}:cada producto anidado en cada categoria, una vez que es llamado, ya sea a travez del boton 
- *          de la categoria a la que correpsonde o a través del input search.
+ * Componente Products para mostrar detalles del mismo
+ * 
+ * @author Roxana Viloria
+ * @param {object} props Component props
+ * @param {object} props.product objeto product con toda la informacion
+ * @returns {JSX.Element} Elemento HTML con toda la informacion y estilo de un producto. 
  */
 
 export default function Products({ product }){

@@ -15,8 +15,6 @@ import NotFound from '../notfound/NotFound';
  * @email : roxanaviloria02@gmail.com
  * @returns: productos de cada categoria, segun corresponda ( boton clickeado)
  */
-
-
 export default function Body(){
     const { category, isPress, search, elements }=useContext(AppContext)
 
@@ -34,7 +32,6 @@ export default function Body(){
         En este caso, ocurrió en un par de oportunidades que al hacer la solicitud, 
         arrojaba error por sobrepasar capacidad de conexión en la base de datos.
  */ 
-
     useEffect (()=>{
         if (categoryValue!== 0 && !press){
         fetch (`https://bsale-api-roxana.herokuapp.com/api/category/${categoryValue}`)
