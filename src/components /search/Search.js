@@ -48,7 +48,7 @@ export default function Search (){
                       type="text"
                       placeholder="Buscar"
                       onChange={onSearchChange}
-                      value={searchValue}
+                      value={searchValue !== null ? searchValue : ""}
                       onKeyDown={enter}
                       >
                   </input>

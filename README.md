@@ -92,3 +92,5 @@ La aplicación funciona de manera correcta, mostrando una pantalla donde el head
 Las categorias y productos se obtuvieron de una base de datos, a la cual se tuvo acceso por los datos entregados por el proveedor del ejercicio y una vez en ella se generó en backend la API REST.
 
 La app se desarrollo con el lenguaje JavaScript, utilizando la libreria React, el framework NodeJs, Express y Sequelize. 
+
+La documentación se encuentra disponible en la carpeta "docs" de mi repositorio en github.
